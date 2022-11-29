@@ -1,0 +1,304 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+body{
+    overflow-x: hidden;
+    background-color: rgb(226, 232, 238);
+}
+
+.masthead {
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+ } 
+
+ #about {
+    position: relative;
+    height: 130vh;
+    padding: 50px;
+ }
+
+#abt {
+    position: relative;
+    top: 250px;
+}
+
+#about h2 {
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    font-size: 14px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    font-weight: 600;
+}
+
+#socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+    color: #000;
+}
+#ab-pic {
+    height: 80vh;
+    width: 50%;
+    overflow: hidden;
+    padding: 40px;
+}
+#member {
+    height: 110vh;
+}
+#mem {
+    position: relative;
+    top: 100px;
+}
+#membered {
+    position: relative;
+    top: 100px;
+}
+#benefits {
+    height: 400px;
+}
+#btned {
+    position: relative;
+    top: 120px;
+}
+
+#top-cred {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#top-credes {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#top-creded {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team .card-body i {
+    font-size: 20px;
+}
+
+.team .card {
+    box-shadow: 20px 20px 40px rgba(0,0,0,1);
+}
+
+#crew-img {
+    height: 220px;
+    width: 200px;
+}
+.socials i:hover{
+    transform: scale(1.2);
+}
+
+.card-body:hover{
+    transform: translateY(-1px);
+    cursor: pointer;
+    box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
+    transition-duration: 700ms;
+    
+}
+#about a {
+    text-decoration: none;
+    color: #000;
+}
+#team a {
+    text-decoration: none;
+    color: blue;
+}
+#contact a {
+    text-decoration: none;
+    color: #E4A11B;
+}
+#btned a {
+    text-decoration: none;
+    color: #000;
+}
+
+#team {
+    width: 100vw;
+    height: 360vh;
+    background: url(./Raic/IMAGES/SL_042620_30310_36.jpg);
+    background-size:cover;
+    object-fit: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    
+}
+
+#team h2 {
+    margin: 50px;
+    font-size: 40px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ben-con {
+    position: relative;
+    top: 200px;
+}
+
+h3 {
+    font-size: 15px;
+    font-weight: 600;
+} 
+
+@media screen and (max-width:1440px) {
+    #about {
+        position: relative;
+        height: 130vh;
+        padding: 50px;
+     }
+     #btned {
+        position: relative;
+        top: 50px;
+    }
+    #ben-con {
+        position: relative;
+        bottom: 300px;
+    }
+    #team {
+        width: 100vw;
+        height: 400vh;
+        background: url(./Raic/IMAGES/SL_042620_30310_36.jpg);
+        background-size:cover;
+        object-fit: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;  
+    }
+}
+@media screen and (max-width:1024px) {
+    #about {
+        position: relative;
+        height: 130vh;
+        padding: 50px;
+     } 
+    .text {
+    font-size: 12px;
+    color: #545454;
+    line-height: 20px;
+    text-align: justify;
+    font-weight: 600;
+    padding: 20px;
+    }
+    #ab-pic {
+        height: 40vh;
+        width: 40%;
+        overflow: hidden;
+        padding: 60px;
+    }
+
+}
+@media screen and (max-width:1000px) {
+
+    #about {
+        position: relative;
+        height: 160vh;
+        padding: 50px;
+     }
+    #ab-pic {
+        height: 50vh;
+        width: 50%;
+        overflow: hidden;
+        padding: 60px;
+    }
+    #ben-con {
+        position: relative;
+        top: 50px;
+    }
+    #btned {
+        position: relative;
+        top: 75px;
+    }
+    #team {
+        width: 100vw;
+        height: 600vh;
+        background: url(./Raic/IMAGES/SL_042620_30310_36.jpg);
+        background-size:cover;
+        object-fit: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+    }
+    #team h2 {
+        margin: 70px;
+        font-size: 40px;
+        font-weight: 900;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #member {
+        position: relative;
+        top: 1rem;
+    }
+    #contact {
+        position: relative;
+        top: 50rem;
+    }
+}
+
+ @media (max-width: 768px){ 
+    #ben-con {
+        position: relative;
+        top: 800px;
+    }
+    #btned {
+        position: relative;
+        top: 140px;
+    }
+    #about h2 {
+        margin: 30px;
+        font-size: 20px;
+        font-weight: 900;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #ben-con {
+        position: relative;
+        top: 1000px; 
+    }
+    #contact {
+        position: relative;
+        top: 120rem;
+    }
+    #team {
+        width: 100vw;
+        height: 1100vh;
+        background: url(./Raic/IMAGES/SL_042620_30310_36.jpg);
+        background-size:cover;
+        object-fit: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;  
+    }
+
+ } 
