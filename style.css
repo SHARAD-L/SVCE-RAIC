@@ -1,0 +1,692 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+body{
+    overflow-x: hidden;
+    background-color: rgb(226, 232, 238);
+    scroll-behavior: smooth;
+}
+body::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #fff;
+	border-radius: 10px;
+}
+
+body::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #fff;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-image: -webkit-gradient(linear,
+		           left bottom,
+			   left top,
+			   color-stop(0.44, rgb(181, 237, 247)),
+			   color-stop(0.72,  #80d6e6),
+			   color-stop(0.86, #75f1f1));
+}
+
+#preloader {
+    background: rgb(181,237,247) url(./Raic/IMAGES/loader.gif) no-repeat center center;
+    background-size: 20%;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 999999999;
+}
+
+
+.nav-link {
+    position: relative;
+}
+.nav-link::after {
+    content: '';
+    opacity: 0;
+    transition: all 0.2s;
+    height: 2px;
+    width: 100%;
+    background-color: grey;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.nav-link:hover::after {
+    opacity: 1;
+}
+
+.masthead {
+    background-size: cover;
+    top: -20px;
+    min-height: 100vh;
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+ } 
+
+#clg-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 300px;
+    left: 74rem;
+    width: 520px;
+    margin: 20px;
+    height: 120px;
+    line-height: 9px;
+    letter-spacing: 1px;
+    border: 0.1rem solid;
+    background-color:  rgba(255,255,255,0.6);
+    font-size: 12px;
+    font-weight: 600;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+
+ #about {
+    position: relative;
+    height: 90vh;
+    padding: 50px;
+ }
+
+#abt {
+    position: relative;
+    top: 180px;
+}
+
+#about h2 {
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    font-size: 14px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    font-weight: 600;
+}
+
+#socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+    color: #000;
+}
+#ab-pic {
+    height: 80vh;
+    width: 50%;
+    overflow: hidden;
+    padding: 40px;
+}
+#member {
+    height: 110vh;
+}
+#mem {
+    position: relative;
+    top: -30px;
+}
+#membered {
+    position: relative;
+    top: 10px;
+}
+#benefits {
+    height: 400px;
+}
+#btned {
+    position: relative;
+    top: 120px;
+}
+
+#top-cred {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#top-credes {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#top-creded {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team .card-body i {
+    font-size: 20px;
+}
+.card {
+    background-color: rgba(255,255,255,0.35);
+}
+.team .card {
+    box-shadow: 20px 20px 40px rgba(0,0,0,1);
+}
+
+#crew-img {
+    height: 160px;
+    width: 160px;
+}
+.socials i:hover{
+    transform: scale(1.2);
+}
+
+.card-body:hover{
+    transform: translateY(-1px);
+    cursor: pointer;
+    box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
+    transition-duration: 700ms;
+}
+
+ #drop-btn {  
+    text-align: center;
+}
+#about a {
+    text-decoration: none;
+    color: #000;
+}
+#team a {
+    text-decoration: none;
+    color: black;
+}
+#contact a {
+    text-decoration: none;
+    color: #E4A11B;
+}
+#btned a {
+    text-decoration: none;
+    color: #000;
+}
+
+#team {
+    width: 100vw;
+    height: 300vh;
+    background: url(./Raic/IMAGES/SL_042620_30310_36.jpg);
+    background-size:cover;
+    object-fit: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;    
+}
+
+#team h2 {
+    margin: 50px;
+    font-size: 40px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ben-con {
+    position: relative;
+    top: 200px;
+}
+
+h3 {
+    font-size: 15px;
+    font-weight: 600;
+} 
+@media screen and (max-width:1920px) {
+    #clg-content {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 300px;
+        left: 50rem;
+        width: 480px;
+        margin: 20px;
+        height: 120px;
+        line-height: 9px;
+        letter-spacing: 1px;
+        border: 0.1rem solid;
+        background-color:  rgba(255,255,255,0.6);
+        font-size: 12px;
+        font-weight: 600;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+    }
+    #texted {
+        position: relative;
+        top: 10px;
+        font-size: 9px;
+    }
+}
+@media screen and (max-width:1440px) {
+    #about {
+        position: relative;
+        height: 120vh;
+        padding: 50px;
+     }
+     #btned {
+        position: relative;
+        top: 50px;
+    }
+    .text {
+        font-size: 12px;
+    }
+    #ben-con {
+        height: 120vh;
+    }
+    #membered {
+        position: relative;
+        top: -200px;
+    }
+    #mem {
+        position: relative;
+        top: -160px;
+    }
+
+    #team {
+        width: 100vw;
+        height: 500vh;
+        background: url(./Raic/IMAGES/SL_042620_30310_36.jpg);
+        background-size:cover;
+        object-fit: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;  
+    }
+    #clg-content {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 300px;
+        left: 50rem;
+        width: 480px;
+        margin: 20px;
+        height: 120px;
+        line-height: 9px;
+        letter-spacing: 1px;
+        border: 0.1rem solid;
+        background-color:  rgba(255,255,255,0.6);
+        font-size: 12px;
+        font-weight: 600;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+    }
+}
+@media screen and (max-width:1300px) {
+    #clg-content {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 320px;
+        left: 38rem;
+        width: 380px;
+        margin: 20px;
+        height: 120px;
+        line-height: 9px;
+        letter-spacing: 1px;
+        border: 0.1rem solid;
+        background-color:  rgba(255,255,255,0.6);
+        font-size: 12px;
+        font-weight: 600;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+    }
+    #texted {
+        position: relative;
+        top: 10px;
+        font-size: 9px;
+    }
+}
+@media screen and (max-width:1024px) {
+    #about {
+        position: relative;
+        height: 70vh;
+        padding: 50px;
+     } 
+    .text {
+    font-size: 12px;
+    color: #545454;
+    line-height: 20px;
+    text-align: justify;
+    font-weight: 600;
+    padding: 20px;
+    }
+    #ab-pic {
+        height: 40vh;
+        width: 40%;
+        overflow: hidden;
+        padding: 60px;
+    }
+    #clg-content {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 320px;
+        left: 38rem;
+        width: 370px;
+        margin: 20px;
+        height: 120px;
+        line-height: 9px;
+        letter-spacing: 1px;
+        border: 0.1rem solid;
+        background-color:  rgba(255,255,255,0.6);
+        font-weight: 600;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+    }
+    #texted {
+        position: relative;
+        top: 10px;
+        font-size: 9px;
+    }
+
+}
+@media screen and (max-width:1000px) {
+
+    #about {
+        position: relative;
+        height: 130vh;
+        padding: 50px;
+     }
+    #ab-pic {
+        height: 50vh;
+        width: 50%;
+        overflow: hidden;
+        padding: 60px;
+    }
+    #ben-con {
+        position: relative;
+        top: 50px;
+    }
+    #btned {
+        position: relative;
+        top: 75px;
+    }
+    #team {
+        width: 100vw;
+        height: 280vh;
+        background: url(./Raic/IMAGES/SL_042620_30310_36.jpg);
+        background-size:cover;
+        object-fit: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+    }
+    #team h2 {
+        margin: 70px;
+        font-size: 40px;
+        font-weight: 900;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #member {
+        position: relative;
+        height: 60vh;
+    }
+    #contact {
+        position: relative;
+        top: 10rem;
+    }
+    #clg-content {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 100px;
+        left: 14rem;
+        width: 380px;
+        margin: 20px;
+        height: 120px;
+        line-height: 9px;
+        letter-spacing: 1px;
+        border: 0.1rem solid;
+        background-color:  rgba(255,255,255,0.6);
+        font-size: 12px;
+        font-weight: 600;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+    }
+    #texted {
+        position: relative;
+        top: 10px;
+        font-size: 9px;
+    }
+}
+@media screen and (max-width:992px) {
+
+    #about {
+        position: relative;
+        height: 130vh;
+        padding: 50px;
+     }
+    #ab-pic {
+        height: 50vh;
+        width: 50%;
+        overflow: hidden;
+        padding: 60px;
+    }
+    #ben-con {
+        position: relative;
+        top: 50px;
+    }
+    #btned {
+        position: relative;
+        top: 75px;
+    }
+    #team {
+        width: 100vw;
+        height: 420vh;
+        background: url(./Raic/IMAGES/SL_042620_30310_36.jpg);
+        background-size:cover;
+        object-fit: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+    }
+    #team h2 {
+        margin: 70px;
+        font-size: 40px;
+        font-weight: 900;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #member {
+        position: relative;
+        top: 1rem;
+    }
+    #contact {
+        position: relative;
+        top: 60rem;
+    }
+    #clg-content {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 100px;
+        left: 14rem;
+        width: 380px;
+        margin: 20px;
+        height: 120px;
+        line-height: 9px;
+        letter-spacing: 1px;
+        border: 0.1rem solid;
+        background-color:  rgba(255,255,255,0.6);
+        font-size: 12px;
+        font-weight: 600;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+    }
+    #texted {
+        position: relative;
+        top: 10px;
+        font-size: 9px;
+    }
+}
+
+ @media (max-width: 768px){ 
+    #ben-con {
+        position: relative;
+        top: 800px;
+    }
+    #btned {
+        position: relative;
+        top: 140px;
+    }
+    #about h2 {
+        margin: 30px;
+        font-size: 20px;
+        font-weight: 900;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #ben-con {
+        position: relative;
+        top: 100px; 
+    }
+    #contact {
+        position: relative;
+        top: 80rem;
+    }
+    #team {
+        width: 100vw;
+        height: 800vh;
+        background: url(./Raic/IMAGES/SL_042620_30310_36.jpg);
+        background-size:cover;
+        object-fit: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;  
+    }
+    #clg-content {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 620px;
+        left: 12rem;
+        width: 372px;
+        margin: 20px;
+        height: 90px;
+        line-height: 9px;
+        letter-spacing: 1px;
+        border: 0.1rem solid;
+        background-color:  rgba(255,255,255,0.6);
+        font-size: 12px;
+        font-weight: 600;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+    }
+    #texted {
+        position: relative;
+        top: 10px;
+        font-size: 9px;
+    }
+    #drop-btn { 
+        text-align: center;
+    }
+
+ }
+ @media (max-width: 590px){
+    #clg-content {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 620px;
+        left: 5px;
+        width: 372px;
+        margin: 20px;
+        height: 90px;
+        line-height: 9px;
+        letter-spacing: 1px;
+        border: 0.1rem solid;
+        background-color:  rgba(255,255,255,0.6);
+        font-size: 12px;
+        font-weight: 600;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+    }
+    #texted {
+        position: relative;
+        top: 10px;
+        font-size: 8px;
+    }
+    #drop-btn { 
+        text-align: center;
+    }
+}
+ @media (max-width: 400px){
+
+    #about {
+        position: relative;
+        height: 160vh;
+        padding: 50px;
+     }
+
+    #team {
+        width: 100vw;
+        height: 1100vh;
+        background: url(./Raic/IMAGES/SL_042620_30310_36.jpg);
+        background-size:cover;
+        object-fit: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;  
+    }
+
+    #clg-content {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 540px;
+        left:1px;
+        width: 220px;
+        margin: 20px;
+        height: 70px;
+        line-height: 9px;
+        letter-spacing: 1px;
+        border: 0.1rem solid;
+        background-color:  rgba(255,255,255,0.6);
+        font-size: 12px;
+        font-weight: 600;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+    }
+
+    #texted {
+        position: relative;
+        top: 10px;
+        font-size: 4px;
+    }
+    #drop-btn { 
+        text-align: center;
+    }
+
+    #member {
+        height: 110vh;
+    }
+
+    #mem {
+        position: relative;
+        top: 10px;
+    }
+
+    #membered {
+        position: relative;
+        top: 20px;
+    }
+}
